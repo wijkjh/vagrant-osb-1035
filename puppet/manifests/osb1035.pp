@@ -19,8 +19,8 @@ node 'osb1035.local' {
         Class['java']  -> 
           Class['wls1035'] -> 
             Class['wls1035_domain'] -> 
-              Class['packdomain'] ->
-                Class['osb1035_files']
+              Class['packdomain'] 
+#                Class['osb1035_files']
 }  
 
 # operating settings for Middleware
@@ -365,7 +365,6 @@ class osb1035_files {
   notice "File: ${xpath_properties_file_loc}"
   file { 'xpath-properties-file':
       path    => $xpath_properties_file_loc,
-      ensure  => file,
       owner   => hiera('wls_os_user'),
       group   => hiera('wls_os_group'),
       mode    => 0640,
@@ -377,7 +376,6 @@ class osb1035_files {
   notice "File: ${xpath_xml_file_loc}"
   file { 'xpath-xml-file':
       path    => $xpath_xml_file_loc,
-      ensure  => file,
       owner   => hiera('wls_os_user'),
       group   => hiera('wls_os_group'),
       mode    => 0640,
@@ -389,7 +387,6 @@ class osb1035_files {
   notice "File: ${xpath_jar_file_loc}"
   file { 'xpath-jar-file':
       path    => $xpath_jar_file_loc,
-      ensure  => file,
       owner   => hiera('wls_os_user'),
       group   => hiera('wls_os_group'),
       mode    => 0640,
