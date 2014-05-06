@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpf:xpathFunctions xmlns:xpf="http://www.bea.com/wli/sb/xpath/config">
+    <xpf:category id="%GD_FUNCTIONS%">
+        <xpf:function>
+            <xpf:name>translate</xpf:name>
+            <xpf:comment>%GD_FUNC_TRANSLATE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.ConversionXQueryFunctions</xpf:className>
+            <xpf:method>java.lang.String translate(java.lang.String,java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+        <xpf:function>
+            <xpf:name>translate-from-column</xpf:name>
+            <xpf:comment>%GD_FUNC_TRANSLATE_FROM_COLUMN_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.ConversionXQueryFunctions</xpf:className>
+            <xpf:method>java.lang.String translateFromColumn(java.lang.String,java.lang.String,java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+        <xpf:function>
+            <xpf:name>get-date-from-dateTime</xpf:name>
+            <xpf:comment>%GD_FUNC_GET_DATE_FROM_DATETIME_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.DateXQueryFunctions</xpf:className>
+            <xpf:method>java.lang.String getDateFromDateTime(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+        <xpf:function>
+            <xpf:name>list-contains-all</xpf:name>
+            <xpf:comment>Returns true if the first list contains all elements of the second list</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.ListXQueryFunctions</xpf:className>
+            <xpf:method>boolean listContainsAll([Lorg.apache.xmlbeans.XmlObject;,[Lorg.apache.xmlbeans.XmlObject;)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>  
+        <xpf:function>
+            <xpf:name>list-contains-some</xpf:name>
+            <xpf:comment>Returns true if the first list contains all elements of the second list</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.ListXQueryFunctions</xpf:className>
+            <xpf:method>boolean listContainsSome([Lorg.apache.xmlbeans.XmlObject;,[Lorg.apache.xmlbeans.XmlObject;)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>  
+        <xpf:function>
+            <xpf:name>conversion-table-reload</xpf:name>
+            <xpf:comment>Performs a forced reload of the conversion table definition</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.ConversionXQueryFunctions</xpf:className>
+            <xpf:method>java.lang.String forceRefresh()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>  
+        <xpf:function>
+            <xpf:name>get-property</xpf:name>
+            <xpf:comment>Retrieves a system property</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.PropertyXQueryFunctions</xpf:className>
+            <xpf:method>java.lang.String getProperty(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>  
+        <xpf:function>
+            <xpf:name>conversion-table-reload-table</xpf:name>
+            <xpf:comment>Performs a forced reload of a specific conversion table definition</xpf:comment>
+            <xpf:namespaceURI>http://www.gddeventer.com/gd-databank/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.gddeventer.gddatabank.osb.xquery.ConversionXQueryFunctions</xpf:className>
+            <xpf:method>java.lang.String reloadTable(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>  
+     </xpf:category>
+</xpf:xpathFunctions>
